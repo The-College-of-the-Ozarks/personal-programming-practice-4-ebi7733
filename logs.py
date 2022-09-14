@@ -7,7 +7,12 @@ import math
 def g(x):
     return math.log(100 - x**2) + math.sqrt(84 - 5*x - x**2)
 
+#creating input and making a float. 
 x = input("Input the value for x: ")
 x = float(x)
 
-print("g(" + str(x) + ") = " + str(g(x)))
+#creating the range for the fuction.
+if x >-10 and  x<=7:
+   print("g(" + str(x) + ") = " + str(g(x)))
+else: 
+    print("Error input another number")
